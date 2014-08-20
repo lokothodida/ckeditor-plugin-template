@@ -3,7 +3,7 @@ Useful structure for CKEditor plugins that put a placeholder (i.e. `<div>`) on t
 page that will be manipulated with JavaScript on the actual page output.
 
 ## Getting started
-Check out the [wiki](//github.com/lokothodida/ckeditor-plugin-template/wiki) for information on starting up *jQuery ItemSearch*.
+Check out the [wiki](//github.com/lokothodida/ckeditor-plugin-template/wiki) for information on starting using the *CKEditor Plugin Template*.
 
 ## API
 Full API and examples are available on the [wiki](//github.com/lokothodida/ckeditor-plugin-template/wiki).
@@ -14,7 +14,7 @@ The *CKEditor Plugin Template* is licensed under [MIT](http://www.opensource.org
 ## Credit
 * [CKEditor](http://ckeditor.com/)
 * [Oxford IT Services](//github.com/ox-it/) (originally developed as part of the
-  [WebLearn CKEditor Plugins](//github.com/ox-it/wl-ck-plugins))
+  [WebLearn CKEditor Plugins](//github.com/ox-it/wl-ck-plugins) project)
 
 ## Copright
 All rights reserved.
