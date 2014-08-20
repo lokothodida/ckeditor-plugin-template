@@ -19,14 +19,17 @@ CKEDITOR.dialog.add(plugin.dialog, function(editor) {
     minHeight: 200,
 
     contents: [
+      // tabs
       {
         id: 'tab1',
         label: 'text',
         elements: [
+          // fields
           {
             id: 'attribute-1',
             type: 'text',
             label: 'Element 1',
+            className: 'attribute-1',
             onLoad: function() {
               // any manipulations needed to the field
             },
@@ -36,12 +39,15 @@ CKEDITOR.dialog.add(plugin.dialog, function(editor) {
             commit: function(element) {
               element.setAttribute('data-attribute-1', this.getValue());
             }
-          }
+          },
+          // add more fields below
         ],
-      }
+      },
+      // add more tabs below
     ],
 
     onLoad: function() {
+      // add id for easier styling of elements in the dialog
       $(this.getElement()).attr('id', plugin.dialog);
     },
 
