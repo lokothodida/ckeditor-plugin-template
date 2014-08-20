@@ -1,0 +1,29 @@
+/* main dialog */
+#yourPluginDialog {
+}
+
+/* tabs */
+#yourPluginDialog .cke_dialog_tabs {
+  /* */
+}
+  #yourPluginDialog .cke_dialog_tab {
+    /* */
+  }
+  #yourPluginDialog .cke_dialog_tab_selector {
+    /* */
+  }
+
+/* fields */
+#yourPluginDialog .cke_dialog_ui_input_text {
+  /* text field wrapper */
+}
+  #yourPluginDialog .cke_dialog_ui_input_text input {
+    /* text field itself */
+  }
+
+#yourPluginDialog .cke_dialog_ui_input_select {
+  /* select field wrapper */
+}
+  #yourPluginDialog .cke_dialog_ui_input_select select {
+    /* select field wrapper */
+  }
