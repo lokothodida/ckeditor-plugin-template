@@ -17,6 +17,7 @@ plugin.divData        = 'data-' + plugin.id;  // data attribute to show it is fo
 plugin.fakeImageClass = 'cke_' + plugin.id;   // class for your-plugin image placeholders
 
 // function to determine if selected element is of the type required for our dialog
+// you should not need to edit this
 var isCorrectElementType = function(element) {
   if (element && element.is) {
     // we are editing an existing element
@@ -31,6 +32,7 @@ var isCorrectElementType = function(element) {
   }
 };
 
+// register the plugin
 CKEDITOR.plugins.add(plugin.id, {
   details: plugin,  // hooks information so we can use it in the dialog
   requires: 'dialog,fakeobjects',
@@ -79,7 +81,7 @@ CKEDITOR.plugins.add(plugin.id, {
       }
     }
 
-    // add your dialogs
+    // add your dialog(s)
     CKEDITOR.dialog.add(plugin.dialog, this.path + 'dialogs/main.js');
   },
 
@@ -90,6 +92,7 @@ CKEDITOR.plugins.add(plugin.id, {
     if (dataFilter) {
       dataFilter.addRules({
         elements: {
+          // check if the div is of the correct type
           div: function(element) {
             var returnedElement = element;
 
