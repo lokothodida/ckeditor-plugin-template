@@ -1,16 +1,20 @@
 (function() {
 // plugin meta-information
-var plugin = {};
-plugin.id = 'your-plugin';
+var plugin   = {};
+plugin.id    = 'your-plugin';
 plugin.title = 'Your Plugin';
 plugin.label = 'Your Plugin Label';
-plugin.command = 'yourPlugin'; // camel cased
-plugin.dialog = plugin.command + 'Dialog';
-plugin.group = plugin.command + 'Group';
-plugin.item = plugin.command + 'Item';
-plugin.toolbar = 'insert';
-plugin.divData = 'data-' + plugin.id;
-plugin.fakeImageClass = 'cke_' + plugin.id;
+
+// toolbar information
+plugin.toolbar = 'insert';                   // default toolbar your-plugin is part of
+plugin.command = 'yourPlugin';               // camel cased
+plugin.dialog  = plugin.command + 'Dialog';
+plugin.group   = plugin.command + 'Group';
+plugin.item    = plugin.command + 'Item';
+
+// data for divs and the placeholders
+plugin.divData        = 'data-' + plugin.id;  // data attribute to show it is for your-plugin
+plugin.fakeImageClass = 'cke_' + plugin.id;   // class for your-plugin image placeholders
 
 // function to determine if selected element is of the type required for our dialog
 var isCorrectElementType = function(element) {
