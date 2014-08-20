@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CKEditor Plugin Template</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="ckeditor/ckeditor.js"></script>
+    <link rel="stylesheet" href="ckeditor/samples/sample.css">
+    <script>
+      var editor, html = '';
+      var scripts = document.getElementsByTagName("script");
+
+      // getting absolute url of current file
+      var src = scripts[scripts.length-1].baseURI.split('/');
+          src.pop(); // remove example.html
+          src = src.join('/');
+
+      var createEditor = function() {
+        if (editor) {
+          return;
+        }
+
+        var config = {};
+        editor = CKEDITOR.appendTo('editor', config, html);
+        editor.config.allowedContent = true;
+
+        CKEDITOR.plugins.addExternal('your-plugin', src + '/your-plugin/', 'plugin.js');
+        editor.config.extraPlugins += 'your-plugin,';
+      };
+
+      var removeEditor = function() {
+        if (!editor) {
+          return;
+        }
+
+        document.getElementById('editorcontents').innerHTML = html = editor.getData();
+        document.getElementById('contents').style.display = '';
+
+        editor.destroy();
+        editor = null;
+      };
+    </script>
+  </head>
+  <body>
+    <h1 class="samples">CKEditor Plugin Template</h1>
+    <p>
+      <input onclick="createEditor();" type="button" value="Create Editor">
+      <input onclick="removeEditor();" type="button" value="Remove Editor">
+    </p>
+    <div id="editor">
+    </div>
+    <div id="contents" style="display: none">
+      <p>Edited Contents:</p>
+      <div id="editorcontents"></div>
+    </div>
+    <div id="footer">
+      <hr>
+      <p> CKEditor - The text editor for the Internet - <a class="samples" href="http://ckeditor.com/">http://ckeditor.com</a></p>
+      <p id="copy">All rights reserved. File adapted from ajax.html example from CKEditor site.</p>
+    </div>
+  </body>
+</html>
