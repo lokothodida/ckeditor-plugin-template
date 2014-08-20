@@ -1,0 +1,54 @@
+/* search form */
+
+#oxpoints > h2 {
+  font-size: 120%;
+  font-weight: bold;
+  white-space: normal !important;
+}
+#oxpoints > p {
+  margin: 5px 5px 15px 0;
+  white-space: normal !important;
+}
+#ccsearchform form {
+  margin: 0 auto;
+  width: 400px;
+  height: 50px;
+  position: relative;
+}
+#oxpointurifield {
+  font-size: 130%;
+  padding: 9px;
+  height: 36px;
+  width: 350px;
+  line-height: 36px;
+}
+
+
+/* search results */
+.ui-autocomplete {
+  list-style-type: none;
+  font-size: 120%;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius-bottom-left: 5px;
+  border-radius-bottom-right: 5px;
+  max-width: 350px;
+}
+.ui-menu-item {
+  margin: 0;
+  padding: 0;
+}
+.ui-menu-item a {
+  display: block;
+  margin: 3px;
+  padding: 5px;
+  border: 1px solid #e0dfde;
+  border-radius: 5px;
+}
+.ui-menu-item a:hover {
+  background: #F5F5F5;
+  border-color: #D9D9D9;
+  box-shadow: 1px 1px 3px #D9D9D9;
+}

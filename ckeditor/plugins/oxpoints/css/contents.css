@@ -1,0 +1,21 @@
+/* OxPoint boxes in content area */
+.oxpoint {
+  cursor: pointer;
+  margin: 5px;
+  display: block;
+  height: 120px;
+  width: 120px;
+  color: #ccc;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 120px;
+  font-size: 110%;
+  transition: border-color 0.5s, color 0.5s;
+}
+.oxpoint:hover {
+  border-color: #ce1212;
+  color: #ce1212;
+}
+.oxpoint:before {
+  content: "OxPoint";
+}

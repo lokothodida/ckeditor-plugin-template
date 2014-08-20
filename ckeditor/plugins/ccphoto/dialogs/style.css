@@ -1,0 +1,114 @@
+/* search form */
+.ccsearchframe {
+  height: 177px !important;
+  width: 100% !important;
+  position: relative;
+}
+#ccsearchframe {
+  width: 460px;
+  padding: 0px 20px 0px 20px;
+}
+#ccsearchform > h2 {
+  font-size: 120%;
+  font-weight: bold;
+  white-space: normal !important;
+}
+#ccsearchform > p {
+  margin: 5px 5px 15px 0;
+  white-space: normal !important;
+}
+#ccsearchform form {
+  margin: 0 auto;
+  width: 400px;
+  height: 50px;
+  position: relative;
+}
+#ccsearchquery {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 130%;
+  padding: 5px;
+  height: 36px;
+  width: 252px;
+  line-height: 36px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+#ccsearchtype {
+  width: 100px;
+  position: absolute;
+  top: 0px;
+  right: 49px;
+  border-right: medium none;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  font-size: 130%;
+  height: 36px;
+  padding-top: 6px;
+}
+#ccsearchbutton {
+  font-family: FontAwesome;
+  width: 32px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  position: absolute;
+  top: 0; right: 0;
+  padding: 8px;
+}
+#ccsearchbutton:focus, #ccsearchbutton:active {
+  padding: 7px !important;
+}
+
+#queryselect {
+  overflow: hidden;
+}
+#queryselect select {
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+}
+#queryselect select:focus {
+  outline: none;
+}
+
+/* search results */
+
+#ccsearchresults {
+  max-height: 200px;
+  overflow-y: auto;
+}
+#ccsearchresults li {
+  text-align: center;
+  list-style: none;
+  margin: 3px;
+  padding: 0;
+  width: 100px;
+  float: left;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+#ccsearchresults .img {
+  max-width: 100px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+#ccsearchresults .sizes {
+  display: block;
+  text-align: center;
+  padding: 5px;
+}
+#ccsearchresults .sizes a {
+  padding: 3px;
+  cursor: pointer;
+}
+#ccsearchresults .sizes a:hover {
+  color: #ccc;
+}
+#ccsearchresults .square {
+  font-family: FontAwesome;
+}

@@ -1,0 +1,33 @@
+youtube-embed, .youtube-embed {
+  position: relative;
+  display: block;
+  width: 320px;
+  height: 180px;
+  margin: 10px;
+  background: #1B1B1B;
+  padding: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
+/*replace the content value with the
+corresponding value from the list below*/
+ 
+youtube-embed, .youtube-embed:before {
+  position: absolute;
+  content: "\f03c";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: #959595;
+  font-size: 180px;
+  
+  padding: 10px 70px 10px 70px;
+}
+
+youtube-embed:hover:before, .youtube-embed:hover:before {
+  color: #BFBFBF;
+}

@@ -1,0 +1,7 @@
+youtube-embed, .youtube-embed {
+        display: block;
+        width: 560px;
+        height: 315px;
+        background: blue;
+        padding: 5px;
+      }

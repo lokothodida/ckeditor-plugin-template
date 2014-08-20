@@ -1,0 +1,143 @@
+/* CKEDITOR toolbars */
+#searchiframe {
+  height: 150px;
+  width: 500px;
+}
+#searchiframecont {
+}
+#searchform {
+  width: 460px;
+  padding: 0px 20px 0px 20px;
+}
+#searchform > h2 {
+  font-size: 120%;
+  font-weight: bold;
+  white-space: normal !important;
+}
+#searchform > p {
+  margin: 5px 5px 15px 0;
+  white-space: normal !important;
+}
+#searchwrap {
+  margin: 0 auto;
+  width: 400px;
+  height: 50px;
+  position: relative;
+}
+#searchquery {
+  width: 350px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+  position: absolute;
+  top: 0; left: 0;
+}
+#searchquery, #searchbutton {
+  font-size: 130%;
+  padding: 0;
+  padding: 10px;
+}
+
+#searchbutton {
+  font-family: FontAwesome;
+  width: 32px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  position: absolute;
+  top: 0; right: 0;
+  padding: 8px;
+}
+#searchbutton:focus, #searchbutton:active {
+  padding: 7px !important;
+}
+#searchresults {
+  margin-top: 0px;
+  list-style-type: none;
+  max-width: 500px;
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#searchresults .result {
+  display: block;
+  border: 1px solid #e0dfde;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 14px;
+  background: #fff;
+  box-shadow: 1px 1px 3px #e0dfde;
+  transition: background 0.5s, border 0.5s, box-shadow 0.5s;
+  overflow: hidden;
+}
+#searchresults .result, #searchresults .result * {
+  cursor: pointer !important;
+  white-space: normal !important;
+}
+#searchresults .result:hover {
+  background: #F5F5F5;
+  border-color: #D9D9D9;
+  box-shadow: 1px 1px 3px #D9D9D9;
+}
+#searchresults img {
+  float: left;
+  margin: 0 5px 5px 0;
+  max-width: 100px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 1px 1px 0px #4A4A4A;
+  overflow: hidden;
+}
+#searchresults .result h2 {
+  font-weight: bold;
+  font-size: 130%;
+  word-wrap: break-word !important;
+  color: #55830C;
+  margin-left: 110px;
+  transition: color 0.5s;
+}
+#searchresults .result:hover h2 {
+  color: #8FC716;
+}
+#searchresults .result p {
+  font-size: 90%;
+  font-style: italic;
+  word-wrap: break-word !important;
+  color: #636363;
+  margin-left: 110px;
+}
+#searchresults .noresults,
+#searchresults .badrequest {
+  display: block;
+  text-align: center;
+  padding: 6px;
+  word-wrap: break-word !important;
+}
+
+
+/* Youtube Video CSS */
+/* This will only be shown if the script fails to load */
+[data-youtube-embed] {
+  display: block;
+  height: 315px;
+  width: 560px;
+  background: black;
+  position: relative;
+  color: #fff;
+}
+[data-youtube-embed]:before {
+  /* icon */
+  content: "\f166";
+  font-family: FontAwesome;
+  font-size: 240px;
+  position: absolute;
+  top: -20px;
+  left: 50px;
+}
+[data-youtube-embed]:after {
+  /* error message */
+  content: "Youtube Embed script failed to load.";
+  font-size: 30px;
+  position: absolute;
+  top: 100px;
+  left: 280px;
+}
