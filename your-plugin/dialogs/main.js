@@ -34,9 +34,11 @@ CKEDITOR.dialog.add(plugin.dialog, function(editor) {
               // any manipulations needed to the field
             },
             setup: function(element) {
+              // pull information from the element
               this.setValue(element.getAttribute('data-attribute-1'));
             },
             commit: function(element) {
+              // stick the user input into the element
               element.setAttribute('data-attribute-1', this.getValue());
             }
           },
@@ -52,7 +54,6 @@ CKEDITOR.dialog.add(plugin.dialog, function(editor) {
     },
 
     onShow: function() {
-      this.fakeImage = this.node = null;
       var fakeImage = this.getSelectedElement();
 
       if (fakeImage && fakeImage.data('cke-real-element-type') && fakeImage.data('cke-real-element-type') == 'div') {

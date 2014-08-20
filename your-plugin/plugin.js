@@ -4,7 +4,7 @@ var plugin = {};
 plugin.id = 'your-plugin';
 plugin.title = 'Your Plugin';
 plugin.label = 'Your Plugin Label';
-plugin.command = 'yourPlugin';
+plugin.command = 'yourPlugin'; // camel cased
 plugin.dialog = plugin.command + 'Dialog';
 plugin.group = plugin.command + 'Group';
 plugin.item = plugin.command + 'Item';
@@ -76,7 +76,7 @@ CKEDITOR.plugins.add(plugin.id, {
     }
 
     // add your dialogs
-    CKEDITOR.dialog.add(plugin.dialog, this.path + 'dialogs/' + plugin.id + '.js');
+    CKEDITOR.dialog.add(plugin.dialog, this.path + 'dialogs/main.js');
   },
 
   afterInit: function(editor) {
