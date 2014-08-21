@@ -2,14 +2,14 @@
 // get plugin path
 var path = CKEDITOR.plugins.get('your-plugin').path;
 
-// get plugin details
+// get plugin details (defined in plugin.js)
 var plugin = CKEDITOR.plugins.registered['your-plugin'].details;
 
 // css
 CKEDITOR.document.appendStyleSheet(CKEDITOR.getUrl(path + 'css/dialog.css'));
 
 // javascript
-CKEDITOR.scriptLoader.load(path + 'js/useful-methods.js');
+CKEDITOR.scriptLoader.load(path + 'js/helper-methods.js');
 
 // register dialog
 CKEDITOR.dialog.add(plugin.dialog, function(editor) {
@@ -51,6 +51,9 @@ CKEDITOR.dialog.add(plugin.dialog, function(editor) {
     onLoad: function() {
       // add id for easier styling of elements in the dialog
       $(this.getElement()).attr('id', plugin.dialog);
+
+      // initialize YourPlugin object
+      YourPlugin = new YourPlugin(path);
     },
 
     onShow: function() {
