@@ -51,9 +51,6 @@ CKEDITOR.dialog.add(plugin.dialog, function(editor) {
     onLoad: function() {
       // add id for easier styling of elements in the dialog
       $(this.getElement()).attr('id', plugin.dialog);
-
-      // initialize YourPlugin object
-      YourPlugin = new YourPlugin(path);
     },
 
     onShow: function() {
